@@ -1,11 +1,11 @@
-#include<stdio.h>
-/**main enry point
+#include <stdio.h>
+/**
+ *main enry point
  *
- * return:Always 0 (success)
+ *return:Always 0 (success)
  */
 int main(void)
 {
-	puts("/ "Programming is like building a multilingual puzzle");
-
-	return (0);
+puts("/"Programming is like building a multilingual puzzle");
+return (0);
 }
