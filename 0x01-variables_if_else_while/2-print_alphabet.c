@@ -4,7 +4,6 @@
  *main - prints alphabetic
  *Return: Always 0
  */
-
 int main(void)
 {
 	char c;
