@@ -1,8 +1,8 @@
 #include <stdio.h>
 
-/*
-* This program prints the lowercase alphabet.
-* Return: Always 0
+/**
+*main - Prints the lower case alphabetutical
+*Return: Always 0
 */
 
 int main(void)
