@@ -8,7 +8,7 @@
 */
 
 int main(void)
-{       
+{
 	char low, e, q;
 
 	e = 'e';
@@ -23,3 +23,4 @@ int main(void)
 
 	return (0);
 }
+
