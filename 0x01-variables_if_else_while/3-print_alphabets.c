@@ -3,13 +3,13 @@
 #include <time.h>
 
 /**
- *main - Entry oint.
- *Return: Always 0
- */ 
+ * main - Entry point.
+ * Return: Always 0
+ */	
 
 int main(void)
 {
-	char low; 
+	char low;
 
 	for (low = 'a'; low <= 'z'; low++)
 	putchar(low);
