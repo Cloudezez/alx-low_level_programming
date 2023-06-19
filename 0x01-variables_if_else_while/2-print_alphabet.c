@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /*
-*main - prints alphabetic
-*Return: Always 0
-*/
+ *main - prints alphabetic
+ *Return: Always 0
+ */
 
 int main(void)
 {
