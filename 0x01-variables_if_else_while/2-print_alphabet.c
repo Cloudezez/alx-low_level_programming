@@ -1,9 +1,10 @@
 #include <stdio.h>
 
 /*
- * main - prints alphabetic
- * Return: Always 
- */
+* This program prints the lowercase alphabet.
+* Return: Always 0
+*/
+
 int main(void)
 {
 	char c;
