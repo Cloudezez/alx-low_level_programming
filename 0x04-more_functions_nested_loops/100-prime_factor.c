@@ -10,7 +10,7 @@
 int main(void)
 {
 	long x, maxf = 1;
-	long number = 6128524775143;
+	long number = 612852475143;
 	double square = sqrt(number);
 
 	for (x = 2; x <= square; x++)
