@@ -1,25 +1,18 @@
-#include "main.h"
+#include "holberton.h"
 
 /**
-*print_most_numbers - print num since 0 up to 9
-*Return: The numbers since 0 up to 99
+*print_most_numbers - Funtion
+*
 */
 
 void print_most_numbers(void)
 {
-	int x = 0;
+	int n;
 
-	for (; x <= 0; x++)
+	for (n = 0; n <= 9; n++)
 	{
-	if (x == 2 || x == 4)
-	{
-	continue;
-	}
-	else
-	{
-	_putchar(x = '0');
-	}
+		if ((n != 2) && (n != 4))
+			_putchar(n + '0');
 	}
 	_putchar('\n');
 }
-
