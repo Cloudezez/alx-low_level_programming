@@ -1,29 +1,34 @@
-#include "main.h"
+#include "holberton.h"
 
 /**
-*_strspn - check the code
-*@s: code
-*Return: Always 0.
-*/
+ * _strspn - main function.
+ * @s: Pointer to the string.
+ * @accept: Pointer to the character to print.
+ *
+ * Description: This function gets the length of a prefix substring.
+ *
+ * Return:  the number of bytes in the initial segment of *s which
+ * consist only of bytes from *accept.
+ */
 
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int n=0;
-	int r;
+	unsigned int i = 0, c, p = 0;
 
-	while (*s)
+	while (s[i])
 	{
-	for (r = 0; accept[r]; r++)
-	{
-	if(*s ==accept[r])
-	{
-	n++;
-	break;
+		for (c = 0; accept[c]; c++)
+		{
+			if (s[i] == accept[c])
+			{
+				p++;
+			}
+		}
+		if (p < i)
+		{
+			break;
+		}
+		i++;
 	}
-	else if (accept[r + 1]=='\0')
-	return(n);
-	}
-	s++;
-	}
-	return (n);
+	return (p);
 }
