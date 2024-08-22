@@ -1,32 +1,20 @@
-#include "main.h"
-
+#include "holberton.h"
 /**
-*print_triangle - prints a triangle of squares according parameters
-*@size: The size of the square to be printed
-*Return: empty
-*/
-
+  * print_triangle - prints a triangle
+  * @size: takes in a integer for size of triangle
+  */
 void print_triangle(int size)
 {
-	int x, y, z;
+	int row, column, k;
 
 	if (size <= 0)
+		_putchar('\n');
+	for (row = 0; row < size; row++)
 	{
-	_putchar('\n');
-	}
-	else
-	{
-	for (x =0; x < size; x++)
-	{
-	for (y = size - x; y > 1; y--)
-	{
-	_putchar(32);
-	}
-	for (z = 0; z <= x; z++)
-	{
-	_putchar(35);
-	}
-	_putchar('\n');
-	}
+		for (column = size - row; column > 1; column--)
+			_putchar(' ');
+		for (k = row + column; k >= 1; k--)
+			_putchar('#');
+		_putchar('\n');
 	}
 }
