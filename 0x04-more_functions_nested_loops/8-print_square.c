@@ -1,28 +1,18 @@
-#include "main.h"
-
+#include "holberton.h"
 /**
-*print_square - prints n square according n number o times
-*@size: The number o square/number o times
-*Return: empty
-*/
-
-void  print_square(int size)
+  * print_square - function to print a square
+  * @size: takes in the size of the square
+  */
+void print_square(int size)
 {
-	int x, y;
+	int i, j;
 
 	if (size <= 0)
+		_putchar('\n');
+	for (i = 0; i < size; i++)
 	{
-	_putchar('\n');
-	}
-	else
-	{
-	for (x = 0; x < size; x++)
-	{
-	for (y =0; y < size; y++)
-	{
-	_putchar(35);
-	}
-	_putchar('\n');
-	}
+		for (j = 0; j < size; j++)
+			_putchar('#');
+		_putchar('\n');
 	}
 }
